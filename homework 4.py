@@ -1,8 +1,6 @@
 def reverse_text(string):
    for i in range(len(string)):
-       if i+1 == -(-i):
-        break   
-       string[i+1] = string[-i]
+       string[i] = string[len(string)-1-i]
    return string
 
 string = "hello"
